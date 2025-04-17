@@ -2,8 +2,7 @@
 //  ContentView.swift
 //  WordScramble
 //
-//  Created by Serge Eliseev on 10.03.2025.
-//
+
 
 import SwiftUI
 
@@ -36,7 +35,6 @@ struct ContentView: View {
                     }
                 }
             }
-            //.clipShape(.rect(cornerRadius: 20))
             .navigationTitle(rootWord)
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
@@ -116,7 +114,6 @@ struct ContentView: View {
             }
         }
 
-        // If were are *here* then there was a problem – trigger a crash and report the error
         fatalError("Could not load start.txt from bundle.")
     }
     
@@ -156,14 +153,8 @@ struct ContentView: View {
         }
         return true
     }
-    
- 
-
 }
 
 #Preview {
     ContentView()
 }
-
-
-/// Project 6, part 1
